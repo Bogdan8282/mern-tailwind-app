@@ -1,8 +1,8 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const cors = require("cors");
-const connectDB = require("./db");
-const routes = require("./routes");
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import connectDB from "./config/db.js";
+import routes from "./routes/routes.js";
 
 dotenv.config();
 
@@ -17,7 +17,6 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/", routes);
 
-// Підключення до бази даних
 connectDB();
 
 app.listen(PORT, () =>
