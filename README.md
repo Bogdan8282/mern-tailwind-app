@@ -26,3 +26,5 @@ You can use the following commands to configure the project:
 `c-dev` - run only frontend in development mode
 
 `s-dev` - run only backend in development mode
+
+If backend and frontend are connected you should see the message "Server is running".
