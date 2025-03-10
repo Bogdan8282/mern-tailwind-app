@@ -8,10 +8,16 @@
   "type": "module",
   "description": "",
   "scripts": {
-    "s-install": "cd server && npm install",
     "s-dev": "cd server && nodemon index.js",
-    "c-install": "cd client && npm install",
-    "c-build": "cd client && npm run build",
-    "c-dev": "cd client && npm run dev"
+    "c-dev": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run s-dev\" \"npm run c-dev\"",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "build": "cd client && npm run build",
+    "prod": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3"
   }
 }
