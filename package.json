@@ -1,17 +1,17 @@
 {
-  "name": "blog",
+  "name": "mern",
   "version": "1.0.0",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "description": "",
   "scripts": {
     "s-install": "cd server && npm install",
-    "s-start": "cd server && nodemon index.js",
+    "s-dev": "cd server && nodemon index.js",
     "c-install": "cd client && npm install",
     "c-build": "cd client && npm run build",
-    "c-start": "cd client && npm run dev"
+    "c-dev": "cd client && npm run dev"
   }
 }
