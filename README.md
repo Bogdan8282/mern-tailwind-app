@@ -18,7 +18,11 @@ VITE_API_URL=http://localhost:5000/api
 You can use the following commands to configure the project:
 
 `install-all` - install all packages
+
 `dev` - run app in development mode
+
 `prod` - run app in production mode
+
 `c-dev` - run only frontend in development mode
+
 `s-dev` - run only backend in development mode
