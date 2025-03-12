@@ -1,9 +1,7 @@
-This version of the project does not include Tailwind, you can get it [here](https://github.com/Bogdan8282/mern-tailwind-app) if you need it.
-
 To copy this repository run:
 
 ```
-git clone https://github.com/Bogdan8282/mern-app
+git clone https://github.com/Bogdan8282/mern-tailwind-app
 ```
 
 Then use `npm run install-all` to install all necessary packages. Create `.env` file in your root directory and define variables like in this example:
