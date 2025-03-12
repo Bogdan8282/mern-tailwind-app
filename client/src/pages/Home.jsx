@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import "./Home.css";
 
 const Home = () => {
   const [message, setMessage] = useState("");
@@ -13,7 +12,7 @@ const Home = () => {
   return (
     <>
       <main>
-        <h1>{message}</h1>
+        <h1 className="p-4">{message}</h1>
       </main>
     </>
   );
